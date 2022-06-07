@@ -4,13 +4,11 @@
 }
 
 .header__logo {
-  @extend %link;
-
   display: inline-block;
   margin-right: 93px;
 
   color: $accent-text-color;
-  font-family: "Raleway";
+  font-family: $font-family-second, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -74,7 +72,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
-  font-family: "Roboto";
+  font-family: $font-family-main;
   font-weight: 500;
   line-height: 1.14px;
   letter-spacing: 0.02em;
