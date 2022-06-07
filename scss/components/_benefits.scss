@@ -1,0 +1,55 @@
+/* Блок наши преимущества */
+.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.benefits__list {
+  display: flex;
+}
+
+.benefits__item {
+  width: 270px;
+
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $background-cards-color;
+    margin-bottom: 30px;
+  }
+
+  & + & {
+    margin-left: 30px;
+  }
+}
+
+.benefits__title {
+  display: flex;
+
+  margin-bottom: 10px;
+
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+
+.benefits__icon--antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.benefits__icon--clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.benefits__icon--diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.benefits__icon--astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}

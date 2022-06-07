@@ -1,0 +1,114 @@
+/* Шапка сайта */
+.header {
+  border-bottom: 1px solid $border-footer-color;
+}
+
+.header__logo {
+  @extend %link;
+
+  display: inline-block;
+  margin-right: 93px;
+
+  color: $accent-text-color;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.header__logo--dark {
+  color: $logo-text-color;
+}
+
+.footer__logo--white {
+  color: $background-color;
+}
+
+.nav__list .nav__item + .nav__item {
+  margin-left: 50px;
+}
+
+.nav__link {
+  position: relative;
+  display: block;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+}
+
+.nav__link--active {
+  color: $accent-text-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__link.nav__link--active::after {
+  position: absolute;
+  content: "";
+
+  bottom: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $accent-text-color;
+  border-radius: 2px;
+  bottom: -1px;
+}
+
+.contacts__list {
+  display: flex;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.14px;
+  letter-spacing: 0.02em;
+  color: inherit;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__list .contacts__item + .contacts__item {
+  margin-left: 50px;
+}
+
+.contacts__icon--smartphone {
+  width: 12px;
+  height: 16px;
+  margin-right: 10px;
+  fill: $second-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: $accent-text-color;
+  }
+}
+
+.contacts__icon--envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $second-text-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contacts__link:hover &,
+  .contacts__link:focus & {
+    fill: $accent-text-color;
+  }
+}
