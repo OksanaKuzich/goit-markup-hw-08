@@ -71,9 +71,23 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
+  width: 450px;
+
   background-color: $background-color;
   border-radius: 4px;
 
   padding: 40px;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }

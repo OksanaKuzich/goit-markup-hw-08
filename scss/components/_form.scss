@@ -2,10 +2,15 @@
 .form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
   letter-spacing: 0.03em;
 
+  line-height: 1.5;
+
   color: $main-text-color;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form {
@@ -78,9 +83,11 @@
 }
 
 .form__policy {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .form__policy-checkbox {
@@ -130,10 +137,17 @@
 }
 
 .form__policy-link {
+  font-size: 12px;
+  line-height: 1.71;
   color: $accent-text-color;
   text-decoration: underline;
 
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__icon {
@@ -156,7 +170,7 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
+  // margin-bottom: 4px;
 
   color: $second-text-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -168,11 +182,16 @@
 }
 
 .form__policy-subtitle {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   color: $second-text-color;
 
   margin-right: 4px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__icon--close {
@@ -207,15 +226,13 @@
 }
 
 /* Стили к форме в футере */
-.subscribe {
-  margin-left: auto;
-  width: 570px;
-}
 
 .form-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .form-footer__label {
@@ -224,8 +241,7 @@
 
 .form-footer__input {
   height: 50px;
-  width: 358px;
-
+  width: 100%;
   color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -244,12 +260,26 @@
     line-height: 1.25;
     color: rgba(255, 255, 255, 0.6);
   }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 
 .form-footer__btn {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 1119px) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form-footer__icon {

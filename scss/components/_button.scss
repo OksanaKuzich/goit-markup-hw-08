@@ -20,6 +20,11 @@
   &:focus {
     background-color: $hover-btn-color;
   }
+
+  @media screen and (min-width: 480px) {
+    width: 200px;
+    height: 50px;
+  }
 }
 
 // Стили к кнопкам фильтрации на странице портфолио

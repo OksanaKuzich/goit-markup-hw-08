@@ -21,9 +21,15 @@
 .header > .container {
   // padding-top: 16px;
   // padding-bottom: 16px;
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 
   @media screen and (min-width: 768px) {
-    display: flex;
     align-items: center;
   }
 }
