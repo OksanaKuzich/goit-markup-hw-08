@@ -124,9 +124,10 @@
   color: $accent-text-color;
 }
 
-.mobile-menu__socials--link::after {
+.mobile-menu__socials--item::after {
+  content: " ";
   background-color: rgba(33, 33, 33, 0.2);
-  width: 22px;
+  width: 1px;
   height: 22px;
 }
 
