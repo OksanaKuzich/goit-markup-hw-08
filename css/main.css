@@ -894,6 +894,12 @@ ul {
   color: #2196f3;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-menu__contacts--tel {
+    font-size: calc(20px + 1vw);
+  }
+}
+
 .mobile-menu__contacts--email {
   font-weight: 500;
   font-size: 24px;
@@ -910,6 +916,10 @@ ul {
       flex-wrap: wrap;
 }
 
+.mobile-menu__socials--item {
+  position: relative;
+}
+
 .mobile-menu__socials--item:not(:last-child) {
   margin-right: 20px;
 }
@@ -922,11 +932,16 @@ ul {
   color: #2196f3;
 }
 
-.mobile-menu__socials--item::after {
-  content: " ";
+.mobile-menu__socials--item:not(:last-child) .mobile-menu__socials--link::after {
   background-color: rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu__socials--link::after {
+  content: " ";
+  position: absolute;
   width: 1px;
   height: 22px;
+  margin-left: 10px;
 }
 
 .btn {
