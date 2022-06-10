@@ -218,33 +218,66 @@
           <h2 class="services__title">Чем мы занимаемся</h2>
           <ul class="services__list">
             <li class="services__item">
-              <img
-                class="img--no-gap"
-                src="./images/box-1.jpg"
-                alt="Работа за ноутбуком"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/services/services-1_lg.jpg    1x,
+                    ./images/services/services-1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="img--no-gap"
+                  src="./images/services/services-1_lg.jpg"
+                  alt="Работа за ноутбуком"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="services__thumb">Десктопные приложения</p>
             </li>
             <li class="services__item">
-              <img
-                class="img--no-gap"
-                src="./images/box-2.jpg"
-                alt="Прием заявок от клиентов по телефону"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/services/services-2_lg.jpg    1x,
+                    ./images/services/services-2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="img--no-gap"
+                  src="./images/services/services-2_lg.jpg"
+                  alt="Прием заявок от клиентов по телефону"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="services__thumb">Мобильные приложения</p>
             </li>
             <li class="services__item">
-              <img
-                class="img--no-gap"
-                src="./images/box-3.jpg"
-                alt="Выбор спектра цвета на планшете"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/services/services-3_lg.jpg    1x,
+                    ./images/services/services-3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="img--no-gap"
+                  src="./images/services/services-3_lg.jpg"
+                  alt="Выбор спектра цвета на планшете"
+                  width="370"
+                  height="294"
+                  loading="lazy"
+                />
+              </picture>
               <p class="services__thumb">Дизайнерские решения</p>
             </li>
           </ul>
@@ -257,13 +290,38 @@
           <h2 class="services__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                class="img--no-gap"
-                src="./images/img-1.jpg"
-                alt="Продукт дизайнер Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-1_lg.jpg    1x,
+                    ./images/team/team-1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-1_md.jpg    1x,
+                    ./images/team/team-1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-1_sm.jpg    1x,
+                    ./images/team/team-1_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="img--no-gap"
+                  src="./images/team/team-1_sm.jpg"
+                  alt="Продукт дизайнер Игорь Демьяненко"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-name">
                 <h3 class="team-leader">Игорь Демьяненко</h3>
                 <p class="team-profesion" lang="en">Product Designer</p>
@@ -335,13 +393,38 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="img--no-gap"
-                src="./images/img-2.jpg"
-                alt="Фронтэнд разработчик Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-2_lg.jpg    1x,
+                    ./images/team/team-2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-2_md.jpg    1x,
+                    ./images/team/team-2_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-2_sm.jpg    1x,
+                    ./images/team/team-2_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="img--no-gap"
+                  src="./images/team/team-2_sm.jpg"
+                  alt="Фронтэнд разработчик Ольга Репина"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-name">
                 <h3 class="team-leader">Ольга Репина</h3>
                 <p class="team-profesion" lang="en">Frontend Developer</p>
@@ -413,13 +496,38 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="img--no-gap"
-                src="./images/img-3.jpg"
-                alt="Маркетолог Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-3_lg.jpg    1x,
+                    ./images/team/team-3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-3_md.jpg    1x,
+                    ./images/team/team-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-3_sm.jpg    1x,
+                    ./images/team/team-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="img--no-gap"
+                  src="./images/team/team-3_sm.jpg"
+                  alt="Маркетолог Николай Тарасов"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-name">
                 <h3 class="team-leader">Николай Тарасов</h3>
                 <p class="team-profesion" lang="en">Marketing</p>
@@ -491,13 +599,38 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="img--no-gap"
-                src="./images/img-4.jpg"
-                alt="ЮИ дизайнер Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-4_lg.jpg    1x,
+                    ./images/team/team-4_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team/team-4_md.jpg    1x,
+                    ./images/team/team-4_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team/team-4_sm.jpg    1x,
+                    ./images/team/team-4_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="img--no-gap"
+                  src="./images/team/team-4_sm.jpg"
+                  alt="ЮИ дизайнер Михаил Ермаков"
+                  loading="lazy"
+                />
+              </picture>
               <div class="team-name">
                 <h3 class="team-leader">Михаил Ермаков</h3>
                 <p class="team-profesion" lang="en">UI Designer</p>
