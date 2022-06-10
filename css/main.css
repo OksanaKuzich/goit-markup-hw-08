@@ -68,6 +68,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 @media screen and (max-width: 767px) {
@@ -388,16 +389,15 @@ ul {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 450px;
   background-color: #fff;
   border-radius: 4px;
+  width: 450px;
   padding: 40px;
 }
 
 @media screen and (max-width: 479px) {
   .modal-wrapper {
-    width: 100%;
-    max-width: 450px;
+    width: calc(100vw - 30px);
   }
 }
 
@@ -516,30 +516,16 @@ ul {
   border-color: #2196f3;
 }
 
-@media screen and (min-width: 1200px) {
-  .form__policy {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-.form__policy-checkbox {
+.form__policy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.form__policy-checkbox {
   width: 16px;
   height: 15px;
   border: 1px solid #000000;
@@ -630,7 +616,6 @@ ul {
   font-size: 12px;
   line-height: 1.17;
   color: #757575;
-  margin-right: 4px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -817,16 +802,24 @@ ul {
   cursor: pointer;
 }
 
+.menu-button--close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu-button--close:hover, .menu-button--close:focus {
+  fill: #2196f3;
+}
+
 .menu-button--open {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu-button--open:hover, .menu-button--open:focus {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
@@ -845,6 +838,10 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+.mobile-menu__nav--link.nav__link--active {
+  color: #2196f3;
 }
 
 .mobile-menu__contacts {

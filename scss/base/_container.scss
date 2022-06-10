@@ -19,9 +19,8 @@
 }
 
 .header > .container {
-  // padding-top: 16px;
-  // padding-bottom: 16px;
   display: flex;
+  position: relative;
 
   @media screen and (max-width: 767px) {
     display: flex;
