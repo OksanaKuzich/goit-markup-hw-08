@@ -1,6 +1,7 @@
 // Модальное окно
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -42,6 +43,10 @@
 
   @media screen and (min-width: 1200px) {
     width: 528px;
+  }
+  @media screen and (max-height: 640px) {
+    top: 0;
+    transform: translate(-50%, 0);
   }
 }
 
@@ -137,9 +142,11 @@
 }
 
 .form__policy-checkbox {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
 
   width: 16px;
   height: 15px;
